@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Heladería Nico's - Lista de Sabores 🍦</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Heladería Nico's - Lista de Sabores 🍦</h1>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Agregar un sabor...">
+            <button onclick="addFlavor()">Agregar</button>
+        </div>
+        <ul id="taskList" class="task-list">
+            <!-- Aquí se mostrarán los sabores -->
+        </ul>
+        <button onclick="clearCompletedFlavors()" class="clear-completed">Limpiar Sabores Agotados</button>
+        
+        <!-- Menú profesional -->
+        <div class="menu-button">
+            <button onclick="showMenu()">☰ Menú</button>
+        </div>
+        <div id="menuContainer" class="menu-container">
+            <div class="menu">
+                <ul>
+                    <li><a href="#" onclick="handleMenuAction('agregar')">Agregar Sabor</a></li>
+                    <li><a href="#" onclick="handleMenuAction('generar')">Generar Sabor Aleatorio</a></li>
+                    <li><a href="#" onclick="handleMenuAction('limpiar')">Limpiar Todos los Sabores</a></li>
+                    <li><a href="#" onclick="handleMenuAction('limpiarCompletados')">Limpiar Sabores Agotados</a></li>
+                </ul>
+                <h2>Sabores Disponibles</h2>
+                <ul id="menuList">
+                    <!-- Aquí se mostrarán los sabores aleatorios -->
+                </ul>
+                <button class="close-menu" onclick="hideMenu()">✖ Cerrar</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

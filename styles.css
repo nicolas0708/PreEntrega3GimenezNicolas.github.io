@@ -1,0 +1,174 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FCE4D7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #174a39;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.task-input input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #174a39;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.task-input input[type="text"]:focus {
+    border-color: #33ffb8;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.task-input button:hover {
+    background-color: #FF3017;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #FFCDB2;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-list li.complete {
+    background-color: #F2F2F2;
+    text-decoration: line-through;
+    color: #777;
+}
+
+.task-list li button {
+    background-color: #174a39;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease;
+}
+
+.task-list li button:hover {
+    background-color: #FF5733;
+}
+
+.clear-completed {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.clear-completed:hover {
+    background-color: #FF3017;
+}
+
+/* Estilos para emojis de helado */
+.emoji {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+/* Estilos para el menú */
+.menu-button {
+    margin-top: 20px;
+}
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background-color: #FFF;
+    border: 1px solid #174a39;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #FF8364;
+    color: #FFF;
+}
+
+.close-menu {
+    background-color: #FF5733;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.close-menu:hover {
+    background-color: #FF3017;
+}
